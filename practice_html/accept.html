@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accept</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: "JetBrains Mono";
+        }
+        
+        body{
+            background-color: aliceblue;
+        }
+
+        h1{
+            text-align: center;
+            margin: 20px 0px;
+            color: rgb(0, 136, 255);
+        }
+
+        form{
+            background-color: rgb(0, 134, 252);
+            padding: 20px;
+            text-align: center;
+            color: aliceblue;
+            min-width: 300px;
+            width: 80%;
+            max-width: 800px;
+            margin: 10px auto;
+        }
+
+        .fields{
+            margin: 10px 0px;
+            text-align: left;
+            font-size: 20px;
+        }
+
+        .fields input{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Practice Accept Attribute of Form File.</h1>
+
+    <form>
+        <h2>Upload the file</h4>
+        
+        <div class="fields">
+            <label for="image">Image File : </label>
+
+            <input 
+                type="file"
+                accept=".jpg,.jpeg,.png,.gif"
+                id="image"
+                name="imagefields"/>
+        </div>
+
+        <div class="fields">
+            <label for="pdf">DOCS File : </label>
+
+            <input 
+                type="file"
+                accept=".docs,.pdf,.excel,.html"
+                id="pdf"
+                name="imagefields"/>
+        </div>
+
+    </form>
+</body>
+</html>
